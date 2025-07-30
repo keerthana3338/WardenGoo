@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Warden Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="image-container">
+            <div class="image-style"></div>
+        </div>
+
+        <div class="form-container">
+            <div class="user-selection-container">
+
+                <a href="warden-login.html" class="warden-login">Warden Portal</a>
+            </div>
+
+            <div class="container">
+                <form id="studentLoginForm" onsubmit="return studentLogin()">
+                    <h2 id="classStudent">Student Portal</h2><br>
+                    <label for="studentEmail">Registered Number</label>
+                    <input type="name" id="studentEmail" required>
+
+                    <label for="studentPassword">Password</label>
+                    <input type="password" id="studentPassword" required>
+
+                    <button type="submit">Login</button><br><br>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function studentLogin() {
+            var studentEmail = document.getElementById('studentEmail').value;
+            var studentPassword = document.getElementById('studentPassword').value;
+
+
+            window.location.href = "outing-form.html";
+
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>

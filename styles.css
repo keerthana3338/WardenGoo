@@ -1,0 +1,255 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.3px;
+}
+
+/* @font-face {
+  font-family: "circular";
+  src: url(fonts/CircularStd-Book.otf);
+} */
+
+@font-face {
+  font-family: "sans-serif";
+  src: url(fonts/sans-serifNowDisplay-Bold.ttf);
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.image-container {
+  flex: 7;
+  background: url("img1.jpg") center/cover no-repeat;
+  border-radius: 2px;
+  animation-name: image-slider;
+  animation-duration: 20s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+@keyframes image-slider {
+  0%{
+    background: url("img1.jpg") center/cover no-repeat;
+  }
+  25%{
+    background: url("img2.jpg") center/cover no-repeat;
+  }
+  50%{
+    background: url("img3.jpg") center/cover no-repeat;
+  }
+  75%{
+    background: url("img4.jpg") center/cover no-repeat;
+  }
+  100%{
+    background: url("img5.jpeg") center/cover no-repeat;
+  }
+}
+
+
+.form-container {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  color:black;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0909;
+}
+
+.container {
+  width: 70%;
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  color:white;
+  background-color:#333;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#classStudent{
+  color:#ffffff;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#studentLoginForm label {
+  margin-bottom: 8px;
+  color:#ffffff;
+  font-weight: 700;
+  text-align: left;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  background-color: #1f3cd8;
+  color: #fff;
+  padding: 13px 20px;
+  border-radius: 100px;
+  font-family: "sans-serif", sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  border: none;
+  border-radius: 4px;
+}
+
+.message,
+.error {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.user-selection-container {
+  text-align: center;
+}
+
+.user-selection-container a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.user-selection-container .divider {
+  margin: 0 10px;
+  color: #777;
+}
+
+.user-selection-container a.warden-login {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #1f3cd8;
+  padding: 12px 30px;
+  top: 2%;
+  letter-spacing: 0.15px;
+  right: 1%;
+  font-family: "sans-serif", sans-serif;
+}
+
+.user-selection-container a.student-login {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #1f3cd8;
+  padding: 14px 30px; /* Adjust padding as needed */
+  top: 2%;
+  letter-spacing: 0.15px;
+  right: 1%;
+  font-family: "sans-serif", sans-serif;
+}
+
+.warden-portal-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.outing-request {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 25px;
+  /* font-family: "circular", sans-serif; */
+}
+
+.approve-btn,
+.reject-btn {
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.approve-btn {
+  background-color: #009a24;
+  color: #fff;
+  margin-bottom: 1.2%;
+  padding: 13px;
+  border-radius: 4px;
+}
+
+.reject-btn {
+  background-color: #c70014;
+  border-radius: 4px;
+  padding: 13px;
+  color: #fff;
+}
+
+.form-container-2 {
+  width: 70%;
+  max-width: 620px;
+  /* margin: 100px auto; */
+  padding: 20px;
+  background-color: rgba(50, 44, 44, 0.5);
+  border-radius: 8px;
+  box-shadow: 2px 2px 15px white;
+}
+#outingForm{
+  color:white;
+}
+.confirmation-container-outer{
+  height:100vh;
+  width:100%;
+  background-color: #0f0909;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.confirmation-container {
+  text-align: left;
+  width: 70%;
+  max-width: 600px;
+  /* margin: 10% auto; */
+  padding: 20px;
+  background-color: rgba(50, 44, 44, 0.5);
+  color:white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 15px white;
+}
+#confirmation-msg{
+  font-size:22px;
+  font-weight:500;
+}
+.background-color{
+  height:100%;
+  width:100%;
+  background-color:  #0f0909;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+#outing-request{
+  color:white;
+  text-align: center;
+  font-weight: 700;
+}

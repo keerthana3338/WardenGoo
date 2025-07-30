@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outing Request Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-color">
+        <div class="form-container-2">
+            <h2 id="outing-request">Outing Request Form</h2><br>
+            <form id="outingForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+    
+                <label for="registrationNumber">Registration Number</label>
+                <input type="text" id="registrationNumber" required>
+    
+                <label for="toPlace">To Place</label>
+                <input type="text" id="toPlace" required>
+    
+                <label for="branch">Branch</label>
+                <input type="text" id="branch" required>
+    
+                <label for="outingTime">Outing-Time</label>
+                <input type="datetime-local" id="outingTime" required>
+    
+                <label for="inTime">In-Time</label>
+                <input type="datetime-local" id="inTime" required>
+    
+                <label for="parentPhoneNumber">Parent's Phone Number</label>
+                <input type="tel" id="parentPhoneNumber" required>
+    
+                <button type="submit">Request</button>
+            </form>
+        </div>
+    </div>
+    <script src="outing-form.js"></script>
+</body>
+</html>
